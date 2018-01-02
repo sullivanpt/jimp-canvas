@@ -1,0 +1,24 @@
+{
+  "name": "jimp-canvas",
+  "version": "0.1.0",
+  "description": "HTML canvas on node via jimp JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sullivanpt/jimp-canvas.git"
+  },
+  "keywords": [
+    "jimp",
+    "node",
+    "canvas"
+  ],
+  "author": "Patrick Sullivan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sullivanpt/jimp-canvas/issues"
+  },
+  "homepage": "https://github.com/sullivanpt/jimp-canvas#readme"
+}
