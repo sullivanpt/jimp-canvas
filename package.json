@@ -1,6 +1,6 @@
 {
   "name": "jimp-canvas",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HTML canvas on node via jimp JS",
   "main": "index.js",
   "scripts": {
