@@ -2,7 +2,7 @@ const Jimp = require('jimp')
 
 let globalFont
 let globalFontSize = {
-  width: 16,
+  width: 9, // note: this number determined by trial and error
   height: 16
 }
 Jimp.loadFont(Jimp.FONT_SANS_16_BLACK).then(function (font) {
@@ -58,8 +58,9 @@ class Canvas {
     if (!globalFont) return
     this.init()
     // this.font 20px
-    // this.textAlign center
-    let offset = this.measureText(text).width / 2
+    let offset = this.measureText(text).width // this.textAlign == 'right'
+    if (this.textAlign == 'center') offset = offset/2
+    if (this.textAlign == 'left') offset = 0
     this.image.print(globalFont, this.getX(x - offset), this.getY(y - globalFontSize.height), text)
   }
   measureText (text) {
